@@ -1,0 +1,63 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#controles {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffb700d7;
+  color: #050000;
+  border-radius: 4px;
+  text-decoration: none;
+}
+#personagem {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  margin: 2%;
+}
+
+#image {
+  text-align: center;
+  margin: 20px 20px;
+  max-width: 50%;
+}
+
+#imagemAtual {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+#image div button {
+  margin: 5px;
+}
+
+#nomePersonagem {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 45px;
+}
+
+#infoPersonagem {
+  margin: 20px;
+  padding: 10px;
+  font-size: 22px;
+}
+
+#historiaPersonagem {
+  margin: 20px;
+  padding: 10px;
+}
