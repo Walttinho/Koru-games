@@ -7,23 +7,28 @@
     <title>Naruto</title>
   </head>
   <body>
-    <button onclick="window.location.href='/index.html'">Página Inicial</button>
+    <button onclick="window.location.href='/'">Página Inicial</button>
+
     <h1>Naruto</h1>
 
     <h3>Screen</h3>
     <img src="./image/image.jpeg" alt="Jogo 01" />
 
     <h3>Descrição</h3>
-    <p>Esta é a descrição do jogo 03</p>
+
+    <p>Esta é a descrição do jogo do naruto</p>
 
     <h3>Personagens</h3>
-    <h1>Naruto Characters</h1>
+    <h1>Naruto personagens</h1>
+
     <select id="listarPersonagens" onchange="redirecionarParaPersonagem()">
       
     </select>
 
     <h3>Requisitos</h3>
-    <p>Esta é a descrição do jogo 03</p>
+
+    <p>Esta é a descrição do jogo do naruto</p>
+
     <script>
       async function listarPersonagens() {
         await fetch(
@@ -44,8 +49,10 @@
       listarPersonagens();
 
       function redirecionarParaPersonagem() {
-    const selectedCharacter = document.getElementById('listarPersonagens').value;
-    window.location.href = `./personagens/personagem.html?character=${selectedCharacter}`;
+
+    const selecionaPersonagem = document.getElementById('listarPersonagens').value;
+    window.location.href = `./personagens/personagem.html?character=${selecionaPersonagem}`;
+
   }
     </script>
   </body>
