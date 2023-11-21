@@ -1,52 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./image/activities.svg" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="./style/style.css" />
     <title>Naruto</title>
   </head>
   <body>
-    <button onclick="window.location.href='/'">Página Inicial</button>
-    <h1>Naruto</h1>
+    <main>
+      <img id="imagemLateral"
+        src="http://pre12.deviantart.net/91c4/th/pre/i/2012/064/9/a/uzumaki_naruto_vs_uchiha_sasuke_by_xabracadabra-d4rsna5.jpg"
+        alt="Naruto vs Sasuke"
+      />
+      <section class="conteudo">
+        <img src="./image/titulo.png" alt="titulo" id="imagemTitulo"/>
 
-    <h3>Screen</h3>
-    <img src="./image/image.jpeg" alt="Jogo 01" />
+        <div class="informacoes">
+          <div class="imagens">
+            <h3>Imagens</h3>
+            <div class="galeria">
+              <div class="imagem-principal">
+                <img id="imagemPrincipal" src="" alt="Imagem principal">
+              </div>
+              <div class="minhaturas">
+                <div class="minhaturas-carrosel" id="minhaturasCarrosel">
+                 
+                </div>
+          </div>
+          </div>
+          <div class="descricao">
+            <h2>Descrição do Jogo</h2>
+            <p>
+              "Herança Shinobi: A Saga de Naruto" é um jogo de RPG de ação que
+              mergulha os jogadores no mundo emocionante e repleto de aventuras
+              do universo Naruto. Neste jogo, os jogadores podem explorar locais
+              icônicos da série, como Konoha, Sunagakure e outras vilas ninja,
+              enquanto seguem uma narrativa envolvente que abrange a jornada de
+              Naruto desde o início até os momentos épicos de suas batalhas e
+              crescimento como um shinobi.
+            </p>
+            <br />
 
-    <h3>Descrição</h3>
-    <p>Esta é a descrição do jogo do naruto</p>
+            <ul>
+              <li>
+                <strong>Enredo Profundo:</strong> Reviva a história de Naruto
+                desde seu começo como um jovem aspirante a ninja até se tornar
+                um poderoso Hokage, enfrentando desafios, forjando amizades e
+                superando adversidades.
+              </li>
+              <li>
+                <strong>Combate Dinâmico:</strong> Utilize habilidades ninjas
+                únicas, como jutsus, taijutsu e genjutsu, em batalhas
+                emocionantes contra inimigos poderosos e chefes formidáveis.
+              </li>
+              <li>
+                <strong>Exploração:</strong> Viaje por vilas ninja, florestas,
+                montanhas e outros cenários conhecidos da série, completando
+                missões, encontrando segredos e interagindo com personagens
+                memoráveis.
+              </li>
+              <li>
+                <strong>Customização:</strong> Aprimore as habilidades de seu
+                personagem, desbloqueie trajes icônicos e melhore suas técnicas
+                ninja para se tornar o shinobi definitivo.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="lista-personagens">
+          <h3>Lista de Personagens</h3>
+          <div id="personagemCarrossel" class="carrosel"></div>
+        </div>
+        <div class="requirements">
+          <h3>Requisitos do Sistema</h3>
+          <h4>Plataformas</h4>
+          <p>PlayStation 5, Xbox Series X/S, PC (Windows)</p>
 
-    <h3>Personagens</h3>
-    <h1>Naruto personagens</h1>
-    <select id="listarPersonagens" onchange="redirecionarParaPersonagem()">
-      
-    </select>
+          <h4>Requisitos Mínimos</h4>
+          <ul>
+            <li>
+              PC:
+              <ul>
+                <li>Processador Intel Core i5</li>
+                <li>8 GB de RAM</li>
+                <li>Placa de Vídeo NVIDIA GeForce GTX 960</li>
+                <li>50 GB de espaço em disco</li>
+              </ul>
+            </li>
+          </ul>
 
-    <h3>Requisitos</h3>
-    <p>Esta é a descrição do jogo do naruto</p>
-    <script>
-      async function listarPersonagens() {
-        await fetch(
-          "https://naruto-api-rsl3.onrender.com/api/v1/characters?limit=1000"
-        )
-          .then((response) => response.json())
-          .then((data) => {
-            console.log(data);
-            for (let i = 0; i < data.length; i++) {
-              let option = document.createElement("option");
-              option.value = data[i].id;
-              option.innerHTML = data[i].name;
-              document.getElementById("listarPersonagens").appendChild(option);
-            }
-          });
-      }
+          <h4>Requisitos Recomendados</h4>
+          <ul>
+            <li>
+              PC:
+              <ul>
+                <li>Processador Intel Core i7</li>
+                <li>16 GB de RAM, Placa de Vídeo NVIDIA GeForce RTX 2060</li>
+                <li>50 GB de espaço em disco.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
-      listarPersonagens();
-
-      function redirecionarParaPersonagem() {
-    const selecionaPersonagem = document.getElementById('listarPersonagens').value;
-    window.location.href = `./personagens/personagem.html?character=${selecionaPersonagem}`;
-  }
-    </script>
+    <script src="./script/index.js"></script>
   </body>
 </html>
+
+<!-- https://media.graphassets.com/l864Oo6uTTOl5ixQpvXA
+https://player.vimeo.com/video/881799612?background=true&autopause=0&loop=1
+https://player.vimeo.com/video/881796967?background=true&autopause=0&loop=1
+https://media.graphassets.com/1XGdFvojRsa5QJxI0PFz
+https://media.graphassets.com/gk1TRPpwT3meNPVldAGE
+https://media.graphassets.com/v9oaZywuSHGubrE51z1c
+https://media.graphassets.com/a1TskZ1R8ubIMiBprVcQ
+https://media.graphassets.com/ZtNX16tqT6imDl7IQLto
+https://media.graphassets.com/PBVeCo1tTrqmajQUoQzQ
+https://media.graphassets.com/53yUSA2QvfoPzuAXGQYw -->
