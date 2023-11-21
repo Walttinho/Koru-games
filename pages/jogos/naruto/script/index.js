@@ -59,7 +59,7 @@ async function carregarImagemValida(url, fallbackUrl) {
 
     imagemPersonagem.alt = data.characters[i].name;
     imagemPersonagem.addEventListener("click", () => {
-      window.location.href = `./personagens/personagem.html?character=${data[i].id}`;
+      window.location.href = `./personagens/personagem.html?character=${data.characters[i].id}`;
     });
 
     divPersonagem.appendChild(imagemPersonagem);
