@@ -30,6 +30,7 @@ button {
 }
 
 #image {
+
   align-self: flex-start;
   text-align: center;
   margin: 10px 10px;
@@ -38,6 +39,7 @@ button {
 
 #imagemAtual {
   width: 100%;
+
   height: auto;
   border: 1px solid #ccc;
 }
@@ -56,6 +58,7 @@ button {
   margin: 20px;
   padding: 10px;
   font-size: 22px;
+
   display: flex;
 }
 
@@ -75,10 +78,11 @@ button {
 #jutsus {
   background-color: #f5f5f5; /* Cor de fundo para diferenciar a coluna dos jutsus */
   padding: 10px;
+
 }
 
 #historiaPersonagem {
   margin: 20px;
   padding: 10px;
-  
+
 }
