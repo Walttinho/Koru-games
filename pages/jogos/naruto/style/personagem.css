@@ -29,7 +29,6 @@ button {
   margin: 2%;
 }
 
-#image {
 
   align-self: flex-start;
   text-align: center;
@@ -38,7 +37,6 @@ button {
 }
 
 #imagemAtual {
-  width: 100%;
 
   height: auto;
   border: 1px solid #ccc;
@@ -57,7 +55,6 @@ button {
 #infoPersonagem {
   margin: 20px;
   padding: 10px;
-  font-size: 22px;
 
   display: flex;
 }
