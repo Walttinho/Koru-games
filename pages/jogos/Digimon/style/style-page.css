@@ -1,0 +1,164 @@
+/* ----------------- PAGE ------------------------------- */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+section:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.split-section {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: left;
+}
+
+.section-1a {
+  margin-top: -20px
+}
+
+.section-1b {
+  height: auto
+  margin
+}
+
+
+.split-section > div {
+  width: 50%;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+/* ----------------- PAGE END --------------------------- */
+/* ----------------- SECTION 1B----------------------------  */
+
+#mais{
+  display: none;
+}
+
+.text-container {
+  max-width: 100%;
+  text-align: left;
+  position: relative;
+  height: 100%; /* Ajuste a altura conforme necessário */
+  margin-top: -60px; /* Ajuste o valor negativo conforme necessário */
+}
+
+#btnLeiaMais {
+  position: relative;
+  display: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* ----------------- SECTION 1B END----------------------------  */
+
+/* ----------------- SECTION 2----------------------------  */
+
+.section-2 {
+  margin-top: 20px; /* Espaço superior */
+  display: flex; 
+}
+
+#personagem{
+  margin-bottom: auto;
+  display: none;
+}
+
+/* Estilo para a área de miniaturas */
+.miniaturas {
+  margin-right: 20px; /* Adiciona espaçamento à direita */
+  margin-top: auto;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column; /* Coloca as miniaturas em coluna (verticalmente) */
+  gap: 20px; /* Espaçamento entre as miniaturas */
+}
+
+.thumbnails img {
+  width: 120px; /* Largura da miniatura */
+  height: 100px; /* Altura da miniatura */
+  cursor: pointer;
+  border: 2px solid #ddd; /* Borda das miniaturas */
+  border-radius: 5px; /* Cantos arredondados */
+}
+
+.thumbnails img:hover {
+  border-color: #555; /* Cor da borda ao passar o mouse */
+}
+
+.conteudo {
+  display: inline-block;
+  flex-direction: column; /* Coloca o texto e a imagem em coluna (verticalmente) */
+}
+
+#descricao {
+  margin-bottom: 10px; /* Adiciona espaçamento entre a descrição e a imagem */
+}
+
+/* Estilos para a imagem grande */
+.imagemGrande {
+  width: 100px; /* Largura da imagem é definida como 50% do contêiner */
+  max-width: 300px; /* Largura máxima da imagem (ajuste conforme necessário) */
+  height: 100px; /* Altura é ajustada automaticamente para manter a proporção */
+  border: 2px solid #ddd; /* Adiciona uma borda à imagem grande */
+  border-radius: 5px; /* Cantos arredondados */
+}
+
+
+/* ----------------- SECTION 2 END----------------------------  */
+
+/* ----------------- SECTION 3 ----------------------------  */
+
+.duas-colunas-section {
+  display: flex; /* Utiliza flexbox para alinhar os elementos lado a lado */
+  flex-wrap: wrap; /* Permite que as colunas quebrem para a próxima linha se necessário */
+  justify-content: center; /* Centraliza os elementos horizontalmente */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos para o título */
+.titulo-colunas {
+  width: 100%; /* Garante que o título ocupe 100% da largura disponível */
+  margin-bottom: 20px; /* Adiciona espaçamento abaixo do título */
+}
+
+/* Estilos para cada coluna */
+.coluna {
+  flex: 1; /* Cada coluna ocupa uma proporção igual do espaço disponível */
+  margin: 20px; /* Adiciona margem entre as colunas */
+  max-width: 300px; /* Defina uma largura máxima para as colunas conforme necessário */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+.coluna h3,
+.coluna p, br {
+  margin-bottom: 10px;
+}
+/* ----------------- SECTION 3 END----------------------------  */

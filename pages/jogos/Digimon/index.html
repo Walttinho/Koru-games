@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./style/style-carousel.css">
+  <link rel="stylesheet" type="text/css" href="./style/style-page.css">
+  <link rel="icon" type="image/x-icon" href="/image/favicon.png">
+
+
+</head>
+<body>
+
+  <header>
+    <h1>Cabeçalho</h1>
+  </header>
+
+  <section class="split-section">
+    <div class="section-1a">
+    <div class="carousel-container">
+      <div class="arrow left" onclick="prevSlide()">&#8249;</div>
+      <div class="carousel" id="mainCarousel">
+        <img src="image/imgJogo1.jpg" alt="Image 1">
+        <img src="image/imgJogo2.jpg" alt="Image 2">
+        <img src="image/imgJogo3.jpg" alt="Image 3">
+        <img src="image/imgJogo4.jpg" alt="Image 4">
+        <img src="image/imgJogo5.jpg" alt="Image 5">
+        <img src="image/imgJogo6.jpg" alt="Image 6">
+        <img src="image/imgJogo7.jpg" alt="Image 7">
+        <img src="image/imgJogo8.jpg" alt="Image 8">
+        <img src="image/imgJogo9.jpg" alt="Image 9">
+      </div>
+      <div class="arrow right" onclick="nextSlide()">&#8250;</div>
+    </div>
+    <div class="thumbnail-scroll-container">
+      <div class="thumbnail-scroll" id="thumbnailScroll">
+      <img src="image/imgJogo1.jpg" alt="Image 1">
+      <img src="image/imgJogo2.jpg" alt="Image 2">
+      <img src="image/imgJogo3.jpg" alt="Image 3">
+      <img src="image/imgJogo4.jpg" alt="Image 4">
+      <img src="image/imgJogo5.jpg" alt="Image 5">
+      <img src="image/imgJogo6.jpg" alt="Image 6">
+      <img src="image/imgJogo7.jpg" alt="Image 7">
+      <img src="image/imgJogo8.jpg" alt="Image 8">
+      <img src="image/imgJogo9.jpg" alt="Image 9">
+    </div>
+  </div>
+  </div>
+    
+  <section class="section-1b">
+    <div class="text-container">
+      <header id="tilte">
+      <h2>Digimon Survive</h2>
+    </header>
+      <div class="content" id="longText">
+        <h3>Digimon Survive: Uma Jornada de Sobrevivência e Amizade</h3>
+        <p>Embarque em uma experiência única que combina romance visual e RPG tático. Perdido após um passeio escolar, 
+          Takuma Momozuka e seus amigos enfrentam um mundo repleto de perigos e aliados inesperados.<span id="pontos">...</span></p>
+        <span id="mais">
+          <br>  
+          <h3>Narrativa Envolvente:</h3>
+          <p>Desvende uma trama sombria de amizade e sobrevivência, repleta de dramas envolventes e escolhas impactantes.</p>
+          <br>  
+          <h3>Exploração Intrigante:</h3>
+          <p>Descubra áreas extraordinárias com segredos ocultos e Digimons para 
+            recrutar, tornando a jornada ainda mais cativante.</p>
+          <h3>Escolhas que Moldam o Destino:</h3>
+          <p>Cada decisão influencia o jogo, desde os relacionamentos com 
+            NPCs até a evolução do seu Digimon, determinando o desfecho da aventura.</p>
+          <h3>Estratégia e Emoção em Combate:</h3>
+          <p>Convença adversários a se unirem à sua equipe e evolua-os para batalhas 
+            emocionantes em turnos, proporcionando uma experiência dinâmica e estratégica.</p>
+        </span>
+        <button onclick="leiaMais()" id="btnLeiaMais">Leia mais</button>  
+      </div>  
+    </div>
+  </section>
+  
+    
+     
+  </section>
+
+  <section class="section-2">
+    <h2 id="personagem">Personagens:</h2>
+    <div class="thumbnails">
+      <img id="miniatura1" src="image/personagens/Takuma.jpg" alt="Miniatura 1" onclick="mudarConteudoMiniatura1()">
+      <img id="miniatura2" src="image/personagens/Aoi_Shibuya.jpg" alt="Miniatura 2" onclick="mudarConteudoMiniatura2()">
+      <img id="miniatura3" src="image/personagens/Kaito_Shinonome.jpg" alt="Miniatura 3" onclick="mudarConteudoMiniatura3()">
+      <img id="miniatura2" src="image/personagens/Minoru_Hinata.jpg" alt="Miniatura 4" onclick="mudarConteudoMiniatura4()">
+      <img id="miniatura3" src="image/personagens/Miu_Shinonome.jpg" alt="Miniatura 5" onclick="mudarConteudoMiniatura5()">
+      <img id="miniatura2" src="image/personagens/Ryou_Tominaga.png" alt="Miniatura 6" onclick="mudarConteudoMiniatura6()">
+      <img id="miniatura3" src="image/personagens/Saki_kimishima.jpg" alt="Miniatura 7" onclick="mudarConteudoMiniatura7()">
+      <img id="miniatura2" src="image/personagens/Shuuji_Kayama.jpg" alt="Miniatura 8" onclick="mudarConteudoMiniatura8()">
+    </div>
+    <div class="conteudo">
+      <img id="imagemGrande" src="" alt="Imagem Grande">
+      <h3 id="titulo"></h3>
+      <p id="descricao"> </p>
+      
+    </div>
+  </section>
+
+  <section class="duas-colunas-section">
+    <div class="titulo-colunas">
+    <h2>REQUISITOS DO SISTEMA</h2>
+  </div>
+    <div class="coluna">
+      <h3>MÍNIMOS:</h3>
+      <hr>
+      <p>Requer um processador e sistema operacional de 64 bits</p>
+      <p>SO: Windows 10 64-bit</p>
+      <p>Processador: Intel Core i3-6300 or AMD FX-4350</p>
+      <p>Memória: 8 GB de RAM</p>
+      <p>Placa de vídeo: Nvidia GeForce GT 1030 or AMD Radeon HD 7850</p>
+      <p>Armazenamento: 15 GB de espaço disponível</p>  
+      <p>Outras observações: Setting: Low</p>
+    </div>
+    <div class="coluna">
+      <h3>RECOMENDADO:</h3>
+      <hr>
+      <p>Requer um processador e sistema operacional de 64 bits</p>
+      <p>SO: Windows 10 64-bit</p>
+      <p> Intel Core i7-6700K or AMD Ryzen 3 3300X</p>
+      <p>16 GB de RAM</p>
+      <p>Nvidia GeForce GTX 1080 or AMD Radeon RX 5700 XT</p>
+      <p>Armazenamento: 15 GB de espaço disponível</p>
+      <p>Outras observações: Setting: High</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Rodapé</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/personagens.js"></script>
+  <script src="js/carrousel.js"></script>
+
+</body>
+</html>
