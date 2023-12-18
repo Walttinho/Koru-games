@@ -22,10 +22,6 @@ body {
     color: #cfd8dc;
 }
 
-li{
-    margin-right: 2em;
-}
-
 a {
     color: #7495a1;
     text-decoration: none;
@@ -89,6 +85,8 @@ a {
 /*Teste*/
 
 #logo {
+    max-width: 60%;
+    height: auto;
     cursor: pointer;
 }
 
@@ -106,4 +104,19 @@ a {
 
 .shake-animation {
     animation: shake 0.8s;
+}
+
+/*Media Query*/
+
+@media only screen and (min-width: 768px) {
+    .links-externos__link {
+        opacity: 0;
+        pointer-events: auto;
+        transition: none;
+    }
+
+    .links-externos__item:hover .links-externos__link,
+    .links-externos__item:active .links-externos__link {
+        opacity: 1;
+    }
 }
