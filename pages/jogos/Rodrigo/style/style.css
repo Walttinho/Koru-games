@@ -6,7 +6,6 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    z-index: 10;
     width: 100%;
     font-size: 24px;
     line-height: 1.2;
@@ -31,4 +30,13 @@ a {
     color: #7495a1;
     text-decoration: none;
     transition: color .3s ease;
+}
+
+.nav-link{
+    color: #7495a1;
+
+}
+
+.nav-link:hover {
+    color: white; 
 }
