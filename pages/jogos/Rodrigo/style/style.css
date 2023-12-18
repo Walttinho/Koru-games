@@ -40,3 +40,48 @@ a {
 .nav-link:hover {
     color: white; 
 }
+
+/*Imagem Links*/
+
+.links-externos__item {
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.links-externos__link {
+    display: block;
+    width: calc(100% - 24px);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.links-externos__poster {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+    pointer-events: none;
+}
+
+.links-externos__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.links-externos__link:hover {
+    pointer-events: auto;
+}
+
+.links-externos__item:hover .links-externos__link {
+    opacity: 0;
+}
+
+.links-externos__item:hover .links-externos__poster {
+    filter: grayscale(0%);
+}
