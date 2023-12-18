@@ -85,3 +85,25 @@ a {
 .links-externos__item:hover .links-externos__poster {
     filter: grayscale(0%);
 }
+
+/*Teste*/
+
+#logo {
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25%, 75% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+}
+
+.shake-animation {
+    animation: shake 0.8s;
+}
