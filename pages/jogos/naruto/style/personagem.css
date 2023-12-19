@@ -1,0 +1,85 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#controles {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffb700d7;
+  color: #050000;
+  border-radius: 4px;
+  text-decoration: none;
+}
+#personagem {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  margin: 2%;
+}
+
+
+  align-self: flex-start;
+  text-align: center;
+  margin: 10px 10px;
+  width:60%;
+}
+
+#imagemAtual {
+
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+#image div button {
+  margin: 5px;
+}
+
+#nomePersonagem {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 45px;
+}
+
+#infoPersonagem {
+  margin: 20px;
+  padding: 10px;
+
+  display: flex;
+}
+
+.left-column {
+   flex: 1;
+}
+
+.right-column {
+  flex: 1;
+}
+
+/* Estilos opcionais para estilizar a aparência das colunas */
+#info {
+  margin-right: 10px; /* Espaçamento entre as colunas */
+}
+
+#jutsus {
+  background-color: #f5f5f5; /* Cor de fundo para diferenciar a coluna dos jutsus */
+  padding: 10px;
+
+}
+
+#historiaPersonagem {
+  margin: 20px;
+  padding: 10px;
+
+}
