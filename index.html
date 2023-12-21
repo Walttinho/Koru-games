@@ -1,34 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Koru Games</title>
+    <title>Catálogo de Jogos</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
   </head>
 
   <body>
-    <h1>Koru Games</h1>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">T.Two Games</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" id="aboutLink">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <a href="./empresa.html">empresa</a>
-    <a href="./contato.html">contato</a>
+    <main>
+      <section class="container">
+        <h2 class="text-center mt-5">Lista de Jogos</h2>
+        <div class="row mt-5">
+          <div class="col-md-3">
+            <a href="pages/jogos/naruto/index.html">
+              <div class="card">
+                <img
+                  src="pages/jogos/naruto/image/image.jpeg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Herança Shinobi</h5>
+                  <p class="card-text">
+                    "Herança Shinobi: A Saga de Naruto" é um empolgante RPG de
+                    ação que transporta os jogadores para o universo icônico de
+                    Naruto
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="pages/jogos/Rodrigo/index.html">
+              <div class="card">
+                <img
+                  src="https://via.placeholder.com/150"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Jogo 2</h5>
+                  <p class="card-text">Este é um jogo 2.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
 
-    <h3>Jogos</h3>
+      <section id="about" class="animate__animated animate__backInUp">
+        <h2 class="text-center mt-5">Sobre</h2>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis
+          turpis id mauris fermentum, vitae consectetur libero convallis. Cras
+          imperdiet euismod semper. Pellentesque habitant morbi tristique
+          senectus et netus et malesuada fames ac turpis egestas. Proin mollis
+          justo ac massa auctor, id gravida justo ultricies. Proin sit amet
+          dolor non metus placerat semper in massa. Quisque quis erat eu elit
+          gravida fermentum. In eu leo nulla. Suspendisse a dui a mi
+          sollicitudin fermentum.
+        </p>
+      </section>
 
-    <ul>
-      <li><a href="./pages/jogos/jogo-01/index.html">Jogo 01</a></li>
+      <section id="contact" class="container mt-5">
+        <h2 class="text-center">Contate-nos</h2>
+        <div class="contact-section">
+          <form>
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Digite seu nome"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Endereço de Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Digite seu email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </section>
 
-      <li><a href="./pages/jogos/jogo-02/index.html">Jogo 02</a></li>
-
-      <li><a href="./pages/jogos/jogo-03/index.html">Jogo 03</a></li>
-
-      <li><a href="./pages/jogos/Rodrigo/">Rodrigo</a></li>
-
-      <img src="./pages/jogos/jogo-03/image/image.jpeg" />
-      <li><a href="./pages/jogos/naruto/index.html">Game do Naruto</a></li>
-
-    </ul>
-
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="script.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </main>
   </body>
-
 </html>
