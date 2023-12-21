@@ -1,0 +1,49 @@
+/* Cores */
+body {
+  background-color: #E0E0E0;
+}
+
+/* Barra de navegação */
+.navbar {
+  background-color: #1A237E;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #FFFFFF;
+}
+
+/* Links de navegação */
+.nav-link:hover {
+  color: #FF6F00 !important;
+}
+
+/* Cards */
+.card {
+  transition: transform 0.3s ease-in-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.card:hover {
+  transform: scale(1.15);
+}
+
+#about {
+  width: 75%;
+  margin: 0 auto;
+}
+
+#about p {
+  text-align: justify;
+}
+
+#contact {
+  width: 45%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contact button {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
