@@ -1,12 +1,12 @@
 (async function selecionarPersonagem() {
-  const selecionaPersonagem = new URLSearchParams(window.location.search).get(
+  try{
+  const indicePersonagem = new URLSearchParams(window.location.search).get(
     "character"
   );
-  console.log(selecionaPersonagem);
-  let indicePersonagem = 0;
+
 
   const dadosResposta = await fetch(
-    "https://raw.githubusercontent.com/hellskater/narutodb-website/master/src/pages/api/data/characters.json"
+    `https://narutodb.xyz/api/character/${indicePersonagem}`
   )
     .then((response) => {
       if (!response.ok) {
@@ -15,8 +15,8 @@
       return response.json();
     })
     .then((data) => {
-      data = data[selecionaPersonagem];
-      console.log(data);
+      data = data;
+
       const detalharPersonagem = () => {
         document.title = data.name;
 
@@ -101,28 +101,26 @@
           });
       };
 
-      detalharPersonagem(indicePersonagem);
+       detalharPersonagem(indicePersonagem);
 
       document.getElementById("btnAnterior").addEventListener("click", () => {
-        indicePersonagem =
-          (indicePersonagem - 1 + dadosResposta.length) % dadosResposta.length;
-        detalharPersonagem(indicePersonagem);
+        let ninjaAnterior =parseInt(indicePersonagem) - 1;
+        detalharPersonagem(ninjaAnterior);
       });
 
       document.getElementById("btnProximo").addEventListener("click", () => {
-        indicePersonagem = (indicePersonagem + 1) % dadosResposta.length;
-        detalharPersonagem(indicePersonagem);
+        let ninjaPosterior =(indicePersonagem + 1 ) ;
+        detalharPersonagem(ninjaPosterior);
       });
     })
     .catch((error) => {
       console.error("Erro:", error);
-      // Trate o erro adequadamente
+      
     });
+  }catch (error) {
+    console.error("Erro:", error);
+  }
 })();
-
-/* const historia = document.getElementById("historiaPersonagem");
-const historiaPersonagem = `<li>Descrição: </li></div>`;
-historia.innerHTML = historiaPersonagem */
 
 const controlesDiv = document.getElementById("controles");
 document.body.appendChild(controlesDiv.cloneNode(true));

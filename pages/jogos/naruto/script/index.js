@@ -1,5 +1,5 @@
 
-(async function listarPersonagens() {
+/* (async function listarPersonagens() {
   await fetch("https://www.narutodb.xyz/api/character?limit=2000")
     .then((response) => response.json())
     .then((data) => {
@@ -16,7 +16,7 @@
         document.getElementById("listarPersonagens").appendChild(option);
       }
     });
-})();
+})(); */
 async function verificarImagemValida(url) {
   try {
     const response = await fetch(url, { method: "HEAD" });
@@ -35,38 +35,64 @@ async function carregarImagemValida(url, fallbackUrl) {
   }
 }
 (async function listarPersonagensCarrossel() {
-  const response = await fetch(
-    "https://www.narutodb.xyz/api/character?limit=2000"
-  );
-  const data = await response.json();
-  console.log(data);
-
-  const carroselElemento = document.getElementById("personagemCarrossel");
-  for (let i = 3; i < data.characters.length; i++) {
-    const divPersonagem = document.createElement("div");
-    divPersonagem.classList.add("personagem");
-
-    const nomePersonagem = document.createElement("p");
-    nomePersonagem.textContent = data.characters[i].name;
-
-    const imagemPersonagem = document.createElement("img");
-    const imagemUrl = await carregarImagemValida(
-      data.characters[i].images[0],
-      "./image/activities.svg"
+  try {
+    // Faz uma requisição para obter os dados dos personagens de uma URL
+    const response = await fetch(
+      "https://narutodb.xyz/api/character?limit=2000"
     );
-    imagemPersonagem.src = imagemUrl;
-    imagemPersonagem.alt = data.characters[i].name;
+    
+    // Converte a resposta para o formato JSON
+    const data = await response.json();
+    
+    // Exibe os dados recebidos no console para fins de depuração
+    console.log(data);
 
-    imagemPersonagem.alt = data.characters[i].name;
-    imagemPersonagem.addEventListener("click", () => {
-      window.location.href = `./personagens/personagem.html?character=${data.characters[i].id}`;
-    });
+    // Obtém o elemento HTML onde serão inseridos os personagens
+    const carroselElemento = document.getElementById("personagemCarrossel");
 
-    divPersonagem.appendChild(imagemPersonagem);
-    divPersonagem.appendChild(nomePersonagem);
-    carroselElemento.appendChild(divPersonagem);
+    // Verifica se 'data' e 'data.characters' estão definidos e são arrays
+    if (data && data.characters && Array.isArray(data.characters)) {
+      // Itera sobre os personagens a partir do índice 3 (supondo que existem pelo menos 3 personagens)
+      for (let i = 3; i < data.characters.length; i++) {
+        // Cria um elemento div para representar um personagem
+        const divPersonagem = document.createElement("div");
+        divPersonagem.classList.add("personagem");
+
+        // Cria um elemento <p> para o nome do personagem
+        const nomePersonagem = document.createElement("p");
+        nomePersonagem.textContent = data.characters[i].name;
+
+        // Cria um elemento <img> para a imagem do personagem
+        const imagemPersonagem = document.createElement("img");
+        
+        // Carrega a imagem do personagem de uma URL e define um fallback se a imagem não carregar
+        const imagemUrl = await carregarImagemValida(
+          data.characters[i].images[0],
+          "./image/activities.svg"
+        );
+        
+        // Define a URL da imagem e o texto alternativo (alt) para acessibilidade
+        imagemPersonagem.src = imagemUrl;
+        imagemPersonagem.alt = data.characters[i].name;
+
+        // Adiciona um evento de clique na imagem que redireciona para a página do personagem
+        imagemPersonagem.addEventListener("click", () => {
+          window.location.href = `./personagens/personagem.html?character=${data.characters[i].id}`;
+        });
+
+        // Adiciona os elementos criados ao elemento do carrossel
+        divPersonagem.appendChild(imagemPersonagem);
+        divPersonagem.appendChild(nomePersonagem);
+        carroselElemento.appendChild(divPersonagem);
+      }
+    } else {
+      console.error('Os dados dos personagens estão em um formato inesperado ou não foram recebidos corretamente.');
+    }
+  } catch (error) {
+    console.error('Erro ao buscar ou analisar os dados:', error);
   }
 })();
+
 
 function redirecionarParaPersonagem() {
   const selecionaPersonagem =
