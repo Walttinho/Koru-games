@@ -1,3 +1,4 @@
+
 async function verificarImagemValida(url) {
   try {
     const response = await fetch(url, { method: "HEAD" });
@@ -88,21 +89,18 @@ async function listarPersonagensCarrossel() {
         carroselElemento.appendChild(divPersonagem);
       }
     } else {
-      console.error(
-        "Os dados dos personagens estão em um formato inesperado ou não foram recebidos corretamente."
-      );
+
+      console.error('Os dados dos personagens estão em um formato inesperado ou não foram recebidos corretamente.');
     }
   } catch (error) {
-    console.error("Erro ao buscar ou analisar os dados:", error);
+    console.error('Erro ao buscar ou analisar os dados:', error);
   }
 }
 
-
 document.addEventListener("DOMContentLoaded", () => {
   listarPersonagensCarrossel();
-});
+});  
 
-  
 
 function redirecionarParaPersonagem() {
   const selecionaPersonagem =
