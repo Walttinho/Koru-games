@@ -130,3 +130,9 @@ main {
 .personagem:hover img {
   transform: scale(1.15);
 }
+.linha {
+  /* Define a exibição em linha para os elementos */
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+  gap: 10px; /* Espaçamento entre os elementos */
+}
