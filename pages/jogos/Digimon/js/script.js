@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', function () {
-  document.getElementById("btnLeiaMais").addEventListener('click', leiaMais);
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("btnLeiaMais").addEventListener("click", leiaMais);
 
   function leiaMais() {
     var pontos = document.getElementById("pontos");
@@ -15,16 +15,20 @@ document.addEventListener('DOMContentLoaded', function () {
       maisTexto.style.display = "inline-block";
       btnLeiaMais.innerHTML = "Leia Menos";
 
-       // Aguarda a renderização do texto
-    setTimeout(function () {
-      // Calcula a altura do texto expandido
-      var alturaTextoExpandido = maisTexto.offsetHeight;
+      // Aguarda a renderização do texto
+      setTimeout(function () {
+        // Calcula a altura do texto expandido
+        var alturaTextoExpandido = maisTexto.offsetHeight;
 
-      // Ajusta a posição do botão para a altura do texto expandido
-      btnLeiaMais.style.position = "static";
-      btnLeiaMais.style.top = alturaTextoExpandido + "px";
+        // Ajusta a posição do botão para a altura do texto expandido
+        btnLeiaMais.style.position = "static";
+        btnLeiaMais.style.top = alturaTextoExpandido + "px";
         btnLeiaMais.style.right = "0";
       }, 0);
     }
-  } 
+  }
+  function scrollToSection(sectionClass) {
+    const section = document.querySelector("." + sectionClass);
+    section.scrollIntoView({ behavior: "smooth" });
+  }
 });

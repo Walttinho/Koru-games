@@ -1,56 +1,157 @@
 // Função para definir o conteúdo inicial para Miniatura 1
 function setInitialContent() {
-    mudarConteudoMiniatura1();
-  }
-  
-  // Função para atualizar o conteúdo para Miniatura 1
-  function mudarConteudoMiniatura1() {
-    mudarConteudo('Takuma é um estudante do 8 ano que vem de uma família extremamente comum. Quando participa no acampamento de Estudos Históricos extracurriculares e visita um templo relacionado com lendas de desaparecimentos misteriosos, dá por si perdido em outro mundo.', 'image/personagens/Takuma.jpg', 'Takuma Momotsuka');
-  }
-  
-  // Função para atualizar o conteúdo para Miniatura 2
-  function mudarConteudoMiniatura2() {
-    mudarConteudo('Aoi é uma estudante do 9º ano de outra escola que participa no acampamento da ativdade extracurricular. Trabalha arduamente para lidar com as queixas e pedidos imprudentes dos seus colegas. Normalmente, é calma e raramente fala. No mundo desconhecido, encarrega-se de trabalhos meticulosos como a gestão da comida e manutenção da base.', 'image/personagens/Aoi_Shibuya.jpg', 'Aoi Shibuya');
-  }
-  
-  // Função para atualizar o conteúdo para Miniatura 3
-  function mudarConteudoMiniatura3() {
-    mudarConteudo('Kaito é um rapaz que vive na área perto do acampamento da atividade extracurricular. Para impedir a sua irmã mais nova de ir ao templo interdito, acompanha Takuma e os outros, acabando por parar noutro mundo. Tem um forte sentido de dever e despreza injustiças, mas como também tende a meter-se facilmente em lutas e odeia depender de outros, ocasionalmente, age sem pedir segundas opiniões. Apesar de só se preocupar com a sua irmazinha, fo seu caráter costuma dar aso a mal-entendidos.', 'image/personagens/Kaito_Shinonome.jpg', 'Kaito Shinonome');
-  }
-  
-  // Função para atualizar o conteúdo para Miniatura 4
-  function mudarConteudoMiniatura4() {
-    mudarConteudo('Minoru é um colega de turma e amigo próximo de Takuma que participa no acampamento da atividade extracurricular com ele. É o tipo de pessoa otimista que fala e brinca muito. É relaxado e consegue abrir-se a qualquer pessoa, mas também é incerto na medida em que deixa-se levar e atrai problemas. Não gosta de discussões e, para evitar conflitos, faz as pessoas rir com brincadeiras.', 'image/personagens/Minoru_Hinata.jpg', 'Minoru Hinata');
-  }
-  
-  // Função para atualizar o conteúdo para Miniatura 5
-  function mudarConteudoMiniatura5() {
-    mudarConteudo('Miu é uma garota que vive na área perto do acampamento da atividade extracurricular. É ela que fala a Saki e aos outros sobre o templo interdito, acabando todos por parar num outro mundo. É uma rapariga misteriosa que despista os outros com o seu comportamento excêntrico. Apesar de ser a irmã mais nova de Kaito, o seu instinto  é de superprotetora', 'image/personagens/Miu_Shinonome.jpg', 'Miu Shinonome');
-  }
-  
-  // Função para atualizar o conteúdo para Miniatura 6
-  function mudarConteudoMiniatura6() {
-    mudarConteudo('Ryou é um estudante do 9º ano de outra escola que participa no acampamento da ativdade extracurricular. Parece não conseguir aceitar o facto de estar perdido num outro mundo e tem medo de Kunemon, por quem sente desdém. Não tem jeito para esconder o medo com coragem, pelo que a sua cobardia torna-se cada vez mais aparente', 'image/personagens/Ryou_Tominaga.png', 'Ryou Tominaga');
-  }
-  
-  // Função para atualizar o conteúdo para Miniatura 7
-  function mudarConteudoMiniatura7() {
-    mudarConteudo('Saki é uma estudante do 7º ano que se junta ao acampamento da atividade extracurricular. É honesta e diz tudo aquilo que lhe passa pela cabeça, o que por vezes causa problemas. A sua atitude despreocupada e boa aparência pode fazê-la parecer popular, mas nenhum dos seus supostos amigos a acompanhou para o acampamento, onde acabou por ficar sozinha. Por isso, ela junta-se a Takuma e amigos. Juntos, exploram o templo interdito e acabam noutro mundo', 'image/personagens/Saki_kimishima.jpg', 'Saki kimishima');
-  }
-  
-  // Função para atualizar o conteúdo para Miniatura 8
-  function mudarConteudoMiniatura8() {
-    mudarConteudo('Shuuji é um estudante do 10º ano que se junta ao acampamento como auxiliar. É uma pessoa benevolente, gentil e no qual muitos depositam confiança. Takuma e companhia estavam com a impressão de que ele era um líder no qual podiam confiar, mas após ficarem perdidos num outro mundo onde o seu conhecimento geral já não se aplica, age com base apenas no entusiamo, revelando um lado frágil que culpa os que o rodeiam.', 'image/personagens/Shuuji_Kayama.jpg', 'Shuuji Kayama');
-  }
-   
-  // Função para atualizar o conteúdo com base na miniatura clicada
-  function mudarConteudo(texto, imagem, titulo) {
-    // Atualiza o texto, a imagem e o título com base nos parâmetros passados
-    document.getElementById('descricao').innerHTML = texto;
-    document.getElementById('imagemGrande').src = imagem;
-    document.getElementById('titulo').innerHTML = titulo;
-  }
-  
-  // Adiciona um ouvinte de evento para chamar a função setInitialContent() quando a página é totalmente carregada
-  document.addEventListener('DOMContentLoaded', setInitialContent);
-  
+  mudarConteudoMiniatura1();
+}
+
+// Função para atualizar o conteúdo para Miniatura 1
+function mudarConteudoMiniatura1() {
+  mudarConteudo(
+    "Takuma, estudante do 8º ano, lidera o grupo com coragem. Equipado com seu leal parceiro Agumon, a chama de sua determinação ilumina o caminho através de desafios desconhecidos. Juntos, eles enfrentam um novo mundo, moldando o destino com cada escolha.",
+    "Agumon, o fiel parceiro de Takuma, é um dinossauro digital com uma coragem incomparável. Sua evolução para formas poderosas destaca-se nas batalhas, enquanto sua lealdade inabalável solidifica a ligação única com Takuma.",
+    "image/artes/Takuma_imagem477X599.jpg",
+    "image/personagens/Momotsuka_takuma_battle114X218png.png",
+    "image/personagens/Momotsuka_takuma.png",
+    "Takuma Momotsuka",
+    "Agumon",
+    240,
+    350
+  );
+}
+
+// Função para atualizar o conteúdo para Miniatura 2
+function mudarConteudoMiniatura2() {
+  mudarConteudo(
+    "Aoi, representante de classe e matriarca informal da gangue Digimon Survive, lidera com seu parceiro Labramon. Sendo uma das mais velhas do grupo, ela desempenha um papel crucial na segurança do acampamento. Sua presença tranquilizadora e determinação inspiram confiança nos momentos desafiadores.",
+    "Labramon, o companheiro de Aoi, é uma criatura canina digital com habilidades protetoras. Sua lealdade e instinto para manter o acampamento seguro tornam-no uma peça essencial na jornada do grupo.",
+    "image/artes/Aoi_and_labramon666X599.png",
+    "image/personagens/Shibuya_aoi_battle74X176.png",
+    "image/personagens/Shibuya_aoi.png",
+    "Aoi Shibuya",
+    "Labramon",
+    310,
+    350
+  );
+}
+
+// Função para atualizar o conteúdo para Miniatura 3
+function mudarConteudoMiniatura3() {
+  mudarConteudo(
+    "Kaito, morador próximo ao acampamento, junta-se à busca para proteger sua irmã. Seu senso de dever e aversão à injustiça o levam a enfrentar desafios perigosos. Enquanto luta por independência, sua natureza protetora o conecta profundamente ao grupo.",
+    "Dracumon, o companheiro de Kaito, é uma criatura digital maliciosa e brincalhona. Seu comportamento imprevisível adiciona uma camada de surpresa às situações, desafiando as aparências. Apesar de sua natureza travessa, ele é leal a Kaito e revela facetas inesperadas em sua jornada.",
+    "image/artes/Kaito_and_Dracumon465X600.png",
+    "image/personagens/Shinonome_kaito_battle71X191.png",
+    "image/personagens/Shinonome_Kaito.png",
+    "Kaito Shinonome",
+    "Dracumon",
+    240,
+    350
+  );
+}
+
+// Função para atualizar o conteúdo para Miniatura 4
+function mudarConteudoMiniatura4() {
+  mudarConteudo(
+    "Minoru, um estudante curioso do 7º ano, adiciona uma perspectiva única ao grupo. Sua incessante busca por conhecimento e coragem diante do desconhecido o destacam como um explorador intrépido, revelando segredos que podem mudar o curso da jornada.",
+    "Falcomon, o companheiro de Minoru, é um pássaro digital ágil e curioso. Sua capacidade de explorar áreas inexploradas e sua disposição para enfrentar desafios desconhecidos tornam-no um aliado crucial.",
+    "image/artes/Minoru_and_falcomon595X600png.png",
+    "image/personagens/Hinata_minoru_battle_78X191.png",
+    "image/personagens/Hyūga_minoru.png",
+    "Minoru Hinata",
+    "Falcomon",
+    300,
+    330
+  );
+}
+
+// Função para atualizar o conteúdo para Miniatura 5
+function mudarConteudoMiniatura5() {
+  mudarConteudo(
+    "Miu, uma engenheira talentosa da 8ª série, traz sua curiosidade para o grupo. Com seu parceiro Digimon, ela é a mente criativa por trás das soluções para os desafios técnicos. Sua abordagem pragmática e paixão por descobrir respostas a tornam inestimável.",
+    "Shakomon, o companheiro de Miu, é uma criatura digital aquática. Sua natureza serena e habilidades aquáticas são fundamentais para superar obstáculos aquáticos e trazer equilíbrio ao grupo. Juntos, Miu e Shakomon formam uma equipe formidável, explorando as possibilidades técnicas e desvendando segredos digitais.",
+    "image/artes/Miu_and_shakomon509X599png.png",
+    "image/personagens/Shinonome_miu_battle82X170.png",
+    "image/personagens/Shinonome_miu.png",
+    "Miu Shinonome",
+    "Shakomon",
+    250,
+    350
+  );
+}
+
+// Função para atualizar o conteúdo para Miniatura 6
+function mudarConteudoMiniatura6() {
+  mudarConteudo(
+    "Ryo, o mais velho da nona série, traz sua astúcia estratégica para o grupo. Com seu parceiro Digimon, ele desempenha um papel crucial nas decisões táticas. Seu destemor e habilidade de liderança são fundamentais em momentos críticos.",
+    "Kunemon, o companheiro de Ryou, é um inseto digital com habilidades únicas. Sua agilidade e capacidade de adaptação tornam-no uma peça estratégica vital nas batalhas e explorações digitais.",
+    "image/artes/Ryo_and_kunemon603X600.jpg",
+    "image/personagens/Tominaga_ryo_battle98X205.png",
+    "image/personagens/Tominaga_Ryō.png",
+    "Ryou Tominaga",
+    "Kunemon",
+    280,
+    350
+  );
+}
+
+// Função para atualizar o conteúdo para Miniatura 7
+function mudarConteudoMiniatura7() {
+  mudarConteudo(
+    "Saki, do 7º ano, une-se à aventura. Sua honestidade, por vezes, causa conflitos, mas sua aparência popular esconde uma solidão profunda. Abandonada por supostos amigos, ela se une a Takuma e companhia no acampamento. Juntos, exploram o templo proibido, encontrando um novo mundo.",
+    "Floramon, o companheiro de Saki, é uma planta digital amigável. Sua natureza serena e habilidades relacionadas a plantas são essenciais para explorar ambientes naturais e contribuir para a harmonia do grupo.",
+    "image/artes/Saki_and_floramon512X600.png",
+    "image/personagens/Kimishima_saki_battle_97X175.png",
+    "image/personagens/KimijimaSaki.png",
+    "Saki kimishima",
+    "Floramon",
+    240,
+    340
+  );
+}
+
+// Função para atualizar o conteúdo para Miniatura 8
+function mudarConteudoMiniatura8() {
+  mudarConteudo(
+    "Shuuji, estudante da décima série, contribui com sua alma artística. Sua visão única e empatia são ativos valiosos. Apesar de sua natureza reservada, sua presença sensível fortalece os laços do grupo, especialmente em momentos de tensão.",
+    "Lopmon, o companheiro de Shuuji, é um coelho digital adorável, mas poderoso. Sua natureza sincera e habilidades surpreendentes fazem dele um aliado confiável nas situações mais desafiadoras.",
+    "image/artes/KayamaShuuji411X599.png",
+    "image/personagens/Kayama_shuujiBattle106x219.png",
+    "image/personagens/KayamaShuuji.png",
+    "Shuuji Kayama",
+    "Lopmon",
+    220,
+    350
+  );
+}
+
+// Função para atualizar o conteúdo com base na miniatura clicada
+function mudarConteudo(
+  texto,
+  descricaoDigimon,
+  imagem,
+  imagemChibi,
+  arteGrande,
+  titulo,
+  tituloDigimon,
+  largura,
+  altura
+) {
+  // Atualiza o texto, a imagem e o título com base nos parâmetros passados
+  document.getElementById("descricao").innerHTML = texto;
+  document.getElementById("titulo").innerHTML = titulo;
+  document.getElementById("titulo_Digimon").innerHTML = tituloDigimon;
+  document.getElementById("descricao_digimon").innerHTML = descricaoDigimon;
+
+  var imagemGrande = document.getElementById("imagemGrande");
+  imagemGrande.src = imagem;
+  document.getElementById("imagemChibi").src = imagemChibi;
+  imagemChibi.src = imagemChibi;
+  document.getElementById("arteGrande").src = arteGrande;
+  arteGrande.src = arteGrande;
+
+  // Define as dimensões da imagem grande com base na miniatura clicada
+  imagemGrande.style.width = largura + "px";
+  imagemGrande.style.height = altura + "px";
+}
+
+// Adiciona um ouvinte de evento para chamar a função setInitialContent() quando a página é totalmente carregada
+document.addEventListener("DOMContentLoaded", setInitialContent);
