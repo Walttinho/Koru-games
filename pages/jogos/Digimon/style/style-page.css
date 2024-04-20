@@ -1,0 +1,266 @@
+@font-face {
+  font-family: 'Digital Dystopia';
+  src: url(font/DigitalDystopia.otf) format('truetype');
+}
+/* ----------------- PAGE ------------------------------- */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Coloca o cabeçalho acima do conteúdo */
+  transition: background-color 0.3s ease; /* Adiciona uma transição suave na cor de fundo */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para ajustar a posição do conteúdo abaixo do cabeçalho */
+body {
+  margin-top: 70px; /* Altura do cabeçalho */
+}
+
+/* Estilos para o cabeçalho quando rolado */
+header.scrolled {
+  background-color: rgba(51, 51, 51, 1); /* Cor de fundo totalmente opaca */
+}
+
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+.section-2, .section-3{
+  background-color: #DAA520;
+}
+
+.split-section {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: left;
+}
+
+.section-1a {
+  margin-top: -20px
+}
+
+.section-1b {
+  height: auto
+}
+
+
+.split-section > div {
+  width: 50%;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+/* ----------------- PAGE END --------------------------- */
+/* ----------------- SECTION 1B----------------------------  */
+
+#mais{
+  display: none;
+}
+
+.text-container {
+  max-width: 100%;
+  text-align: left;
+  position: relative;
+  height: 100%; /* Ajuste a altura conforme necessário */
+  margin-top: -60px; /* Ajuste o valor negativo conforme necessário */
+}
+
+.caixa_titulo{
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+#btnLeiaMais {
+  position: relative;
+  display: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* ----------------- SECTION 1B END----------------------------  */
+
+/* ----------------- SECTION 2----------------------------  */
+
+.section-2 {
+  margin-top: 20px; /* Espaço superior */
+  display: inline-flex; 
+  max-height: 100%;
+  max-width: 100%;
+  justify-content: space-evenly;
+}
+
+.personagem{
+  margin-bottom: 30px;
+  display:block;
+}
+
+.section-2 > div {
+  width: 40%;
+}
+
+/* Estilo para a área de miniaturas */
+.miniaturas {
+  margin-right: 20px; /* Adiciona espaçamento à direita */
+  margin-top: auto;
+}
+
+.thumbnails {
+  display: inline-block;
+  flex-direction: initial; /* Coloca as miniaturas em coluna (verticalmente) */
+  gap: 10px; /* Espaçamento entre as miniaturas */
+  margin-left: 100px;
+}
+
+.thumbnails img {
+  width: 70px; /* Largura da miniatura */
+  height: 70px; /* Altura da miniatura */
+  cursor: pointer;
+  border: 2px solid #DAA520; /* Borda das miniaturas */
+  border-radius: 5px; /* Cantos arredondados */
+}
+
+.thumbnails img:hover {
+  border-color: #000000; /* Cor da borda ao passar o mouse */
+}
+
+.conteudo {
+  display: block;
+  position: relative;
+  filter: drop-shadow( 5px 5px 5px #202020);
+  width: auto; /* Largura desejada para a imagem grande */
+  height: auto; /* Altura ajustada automaticamente para manter a proporção */
+  border-radius: 5px; /* Cantos arredondados */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2px; /* Adiciona espaçamento entre a descrição e a imagem */
+}
+
+#titulo{
+ 
+}
+
+#descricao {
+  margin-bottom: 2px; /* Adiciona espaçamento entre a descrição e a imagem */
+  flex-direction: column; /* Coloca o texto e a imagem em coluna (verticalmente) */
+  display: inline-flex;
+  width: auto;
+  height: auto;
+
+}
+
+/* Estilos para a imagem grande */
+.imagemGrande {
+
+}
+
+
+/* ----------------- SECTION 2 END----------------------------  */
+
+/* ----------------- SECTION 3 ----------------------------  */
+
+.section-3 {
+  display: flex; 
+  max-height: 100%;
+  max-width: 100%;
+  justify-content: space-evenly;
+}
+
+#imagemChibi{
+  filter: drop-shadow( 1px 1px 1px #202020);
+}
+.emjogo{
+  text-align: left; /* Alinha o texto à esquerda */
+  color: rgb(0, 0, 0);
+  display: block;
+}
+#arteGrande{
+  margin-top: 1%;
+  margin-left: 150px;
+  display: flex;
+  max-height: 100%;
+  max-width: 45%;
+  border-radius: 5px; /* Cantos arredondados */
+  filter: drop-shadow( 1px 1px 1px #202020);
+  justify-content: space-evenly;
+}
+/* ----------------- SECTION 3 END----------------------------  */
+
+/* ----------------- SECTION 4 ----------------------------  */
+
+.duas-colunas-section {
+  background-color: #353131;
+  display: flex; /* Utiliza flexbox para alinhar os elementos lado a lado */
+  flex-wrap: wrap; /* Permite que as colunas quebrem para a próxima linha se necessário */
+  justify-content: center; /* Centraliza os elementos horizontalmente */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos para o título */
+.titulo-colunas {
+  text-shadow: 2px 1px #333 ;
+  color: rgb(206, 203, 203);
+  width: 100%; /* Garante que o título ocupe 100% da largura disponível */
+  margin-bottom: 20px; /* Adiciona espaçamento abaixo do título */
+}
+
+/* Estilos para cada coluna */
+.coluna {
+  flex: 1; /* Cada coluna ocupa uma proporção igual do espaço disponível */
+  margin: 20px; /* Adiciona margem entre as colunas */
+  max-width: 300px; /* Defina uma largura máxima para as colunas conforme necessário */
+  text-align: left; /* Alinha o texto à esquerda */
+  color: rgb(206, 203, 203);
+  text-shadow: 2px 1px #333 ;
+}
+.coluna h3,
+.coluna p, br {
+  margin-bottom: 10px;
+}
+/* ----------------- SECTION 4 END----------------------------  */

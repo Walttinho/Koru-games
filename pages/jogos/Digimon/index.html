@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style/style-carousel.css" />
+    <link rel="stylesheet" type="text/css" href="./style/style-page.css" />
+    <link rel="icon" type="image/x-icon" href="/image/favicon.png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#" onclick="scrollToSection('split-section')">Início</a>
+          </li>
+          <li>
+            <a href="#" onclick="scrollToSection('section-2')">Personagens</a>
+          </li>
+          <li>
+            <a href="#" onclick="scrollToSection('section-3')">Requisitos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="split-section">
+      <div class="section-1a">
+        <div class="carousel-container">
+          <div class="arrow left" onclick="prevSlide()">&#8249;</div>
+          <div class="carousel" id="mainCarousel">
+            <img src="image/imgJogo1.jpg" alt="Image 1" />
+            <img src="image/imgJogo2.jpg" alt="Image 2" />
+            <img src="image/imgJogo3.jpg" alt="Image 3" />
+            <img src="image/imgJogo4.jpg" alt="Image 4" />
+            <img src="image/imgJogo5.jpg" alt="Image 5" />
+            <img src="image/imgJogo6.jpg" alt="Image 6" />
+            <img src="image/imgJogo7.jpg" alt="Image 7" />
+            <img src="image/imgJogo8.jpg" alt="Image 8" />
+            <img src="image/imgJogo9.jpg" alt="Image 9" />
+          </div>
+          <div class="arrow right" onclick="nextSlide()">&#8250;</div>
+        </div>
+        <div class="thumbnail-scroll-container">
+          <div class="thumbnail-scroll" id="thumbnailScroll">
+            <img src="image/imgJogo1.jpg" alt="Image 1" />
+            <img src="image/imgJogo2.jpg" alt="Image 2" />
+            <img src="image/imgJogo3.jpg" alt="Image 3" />
+            <img src="image/imgJogo4.jpg" alt="Image 4" />
+            <img src="image/imgJogo5.jpg" alt="Image 5" />
+            <img src="image/imgJogo6.jpg" alt="Image 6" />
+            <img src="image/imgJogo7.jpg" alt="Image 7" />
+            <img src="image/imgJogo8.jpg" alt="Image 8" />
+            <img src="image/imgJogo9.jpg" alt="Image 9" />
+          </div>
+        </div>
+      </div>
+
+      <section class="section-1b">
+        <div class="text-container">
+          <div class="caixa_titulo">
+            <h2 id="titulo_jogo">Digimon Survive</h2>
+          </div>
+          <div class="content" id="longText">
+            <h3>Digimon Survive: Uma Jornada de Sobrevivência e Amizade</h3>
+            <p>
+              Os jogadores embarcam em uma emocionante aventura que ultrapassa
+              os limites da realidade e do digital. No papel de Takuma, um
+              estudante do 8º ano, os jogadores se veem envolvidos em um enredo
+              intrigante durante um acampamento de Estudos Históricos
+              extracurriculares. Ao explorar um antigo templo associado a lendas
+              de desaparecimentos misteriosos, Takuma e seus colegas são
+              transportados para um mundo totalmente novo e desconhecido.<span
+                id="pontos"
+                >...</span
+              >
+            </p>
+            <span id="mais">
+              <br />
+              <p>
+                Neste reino enigmático, os protagonistas se deparam com desafios
+                perigosos, criaturas digitais fascinantes e segredos ocultos.
+                Cada escolha feita pelos jogadores influencia diretamente o
+                curso da história, moldando relacionamentos, determinando
+                aliados e afetando o destino de Takuma e seus amigos. A
+                narrativa cativante explora temas de amizade, coragem e o
+                confronto entre o mundo real e o digital.
+              </p>
+              <br />
+              <p>
+                A jogabilidade de "Digimon Survive" combina elementos de visual
+                novel, estratégia tática e aventura. Os jogadores precisam tomar
+                decisões sábias durante diálogos interativos, influenciando o
+                desenvolvimento dos personagens e desbloqueando diferentes
+                caminhos narrativos. Em batalhas táticas, os parceiros Digimon
+                de cada personagem entram em ação, permitindo que os jogadores
+                usem suas habilidades únicas para derrotar inimigos digitais e
+                resolver quebra-cabeças desafiadores.
+              </p>
+              <br />
+              <p>
+                Ao longo da jornada, os jogadores descobrirão a verdade por trás
+                dos mistérios do mundo digital, enfrentando escolhas difíceis
+                que testarão sua moral e determinação. Com gráficos envolventes,
+                uma trilha sonora emocionante e um enredo rico em reviravoltas,
+                "Digimon Survive" oferece uma experiência única e imersiva,
+                explorando o equilíbrio delicado entre a realidade e o reino
+                digital. Está preparado para sobreviver a esse extraordinário
+                desafio?
+              </p>
+            </span>
+            <button onclick="leiaMais()" id="btnLeiaMais">Leia mais</button>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="section-2">
+      <div>
+        <div class="thumbnails">
+          <h2 class="personagem">Personagens:</h2>
+          <img
+            id="miniatura1"
+            src="image/personagens/takuma_perfil.jpg"
+            alt="Miniatura 1"
+            onclick="mudarConteudoMiniatura1()"
+          />
+          <img
+            id="miniatura2"
+            src="image/personagens/Aoi_perfil.jpg"
+            alt="Miniatura 2"
+            onclick="mudarConteudoMiniatura2()"
+          />
+          <img
+            id="miniatura3"
+            src="image/personagens/kaito_perfil.jpg"
+            alt="Miniatura 3"
+            onclick="mudarConteudoMiniatura3()"
+          />
+          <img
+            id="miniatura2"
+            src="image/personagens/Minoru_perfil.jpg"
+            alt="Miniatura 4"
+            onclick="mudarConteudoMiniatura4()"
+          />
+          <img
+            id="miniatura3"
+            src="image/personagens/Miu_perfil.jpg"
+            alt="Miniatura 5"
+            onclick="mudarConteudoMiniatura5()"
+          />
+          <img
+            id="miniatura2"
+            src="image/personagens/Ryou_perfil.jpg"
+            alt="Miniatura 6"
+            onclick="mudarConteudoMiniatura6()"
+          />
+          <img
+            id="miniatura3"
+            src="image/personagens/saki_perfil.jpg"
+            alt="Miniatura 7"
+            onclick="mudarConteudoMiniatura7()"
+          />
+          <img
+            id="miniatura2"
+            src="image/personagens/Shuuji_perfil.jpeg"
+            alt="Miniatura 8"
+            onclick="mudarConteudoMiniatura8()"
+          />
+          <h3 id="titulo"></h3>
+          <p id="descricao"></p>
+        </div>
+        <div class="Arte">
+          <img id="arteGrande" src="" alt="Arte Grande" />
+        </div>
+      </div>
+      <div>
+        <div class="conteudo">
+          <img id="imagemGrande" src="" alt="Imagem Grande" />
+        </div>
+        <h3 id="titulo_Digimon">Agumon</h3>
+        <p id="descricao_digimon">
+          Agumon, o fiel parceiro de Takuma, é um dinossauro digital com uma
+          coragem incomparável. Sua evolução para formas poderosas destaca-se
+          nas batalhas, enquanto sua lealdade inabalável solidifica a ligação
+          única com Takuma.
+        </p>
+        <div class="Chibi">
+          <h2 class="emjogo">Em jogo:</h2>
+          <img id="imagemChibi" src="" alt="Imagem Em Jogo" />
+        </div>
+      </div>
+    </section>
+    <section class="section-3"></section>
+    <section class="duas-colunas-section">
+      <div class="titulo-colunas">
+        <h2>REQUISITOS DO SISTEMA</h2>
+      </div>
+      <div class="coluna">
+        <h3>MÍNIMOS:</h3>
+        <hr />
+        <p>Requer um processador e sistema operacional de 64 bits</p>
+        <p>SO: Windows 10 64-bit</p>
+        <p>Processador: Intel Core i3-6300 or AMD FX-4350</p>
+        <p>Memória: 8 GB de RAM</p>
+        <p>Placa de vídeo: Nvidia GeForce GT 1030 or AMD Radeon HD 7850</p>
+        <p>Armazenamento: 15 GB de espaço disponível</p>
+        <p>Outras observações: Setting: Low</p>
+      </div>
+      <div class="coluna">
+        <h3>RECOMENDADO:</h3>
+        <hr />
+        <p>Requer um processador e sistema operacional de 64 bits</p>
+        <p>SO: Windows 10 64-bit</p>
+        <p>Intel Core i7-6700K or AMD Ryzen 3 3300X</p>
+        <p>16 GB de RAM</p>
+        <p>Nvidia GeForce GTX 1080 or AMD Radeon RX 5700 XT</p>
+        <p>Armazenamento: 15 GB de espaço disponível</p>
+        <p>Outras observações: Setting: High</p>
+      </div>
+    </section>
+    <footer>
+      <p>Rodapé</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/personagens.js"></script>
+    <script src="js/carrousel.js"></script>
+  </body>
+</html>

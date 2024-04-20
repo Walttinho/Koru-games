@@ -1,0 +1,70 @@
+/* ----------------- CAROUSEL -------------------------- */
+
+.carousel-container {
+  margin: auto;
+  overflow: hidden;
+  max-width: 88%;
+  position: relative;
+
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 100px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  white-space: nowrap;
+}
+
+.carousel img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+  
+  /* ----------------- CAROUSEL END ---------------------- */
+
+  
+  /* ----------------- Miniatura---------------------- */
+  #thumbnailScroll {
+    display: flex;
+    overflow-x: auto;
+    margin-top: 10px;
+     gap: 5px;
+  }
+  
+  .thumbnail-scroll {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  #thumbnailScroll img {
+    width: 60px;
+    height: 40px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  /* ----------------- Miniatura END ---------------------- */
